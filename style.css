@@ -1,0 +1,65 @@
+body {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  }
+   .pricing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+  }
+  .pricing-plan{
+    flex: 1;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);      border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+  }        
+  .plan-button {
+          background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+          margin-top:10px;
+          padding: 15px 45px;
+          text-align: center;
+          text-transform: uppercase;
+          transition: 0.5s;
+          background-size: 200% auto;
+          color: white;            
+          box-shadow: 0 0 20px #eee;
+          border-radius: 10px;
+          cursor: pointer;
+          
+  }
+
+        .plan-button:hover {
+          background-position: right center; 
+          color: #fff;
+          text-decoration: none;
+  }       
+  .plan-title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .plan-price{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4D4C4C;
+  }
+  .plan-features{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .plan-features li{
+    margin-bottom: 20px;
+  }      
+  @media (max-width: 1250px) {
+    .pricing-container{
+      flex-flow: column wrap;
+      height: 100%;
+    }
+  }
